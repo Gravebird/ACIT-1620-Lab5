@@ -23,3 +23,7 @@ nav {
   list-style-position: inside;
   order: 1;
 }
+
+.navitem {
+  display: inline;
+}
