@@ -1,14 +1,25 @@
 
 body {
   background-color:beige;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
 }
 
+header {
+  order: 2;
+}
+
+section {
+  order: 3;
+}
+
 nav {
   background-color:lightblue;
   text-align:center;
   list-style-position: inside;
+  order: 1;
 }
