@@ -1,0 +1,14 @@
+
+body {
+  background-color:beige;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  background-color:lightblue;
+  text-align:center;
+  list-style-position: inside;
+}
