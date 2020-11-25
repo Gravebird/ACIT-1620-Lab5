@@ -21,3 +21,19 @@ function isInt(value) {
           !isNaN(parseInt(value, 10)) &&
           value.toString().length == 4;
  }
+
+function doesCourseCodeExist(the_code) {
+  var i;
+  var match = False;
+  for (i = 0; i < courseList.length; i++) {
+    if (courseList[i][0].indexOf(the_code) > -1) {
+      console.log("Yes I am taking the course: " + courseList[i][1]);
+      match = True;
+      break;
+    }
+  }
+  if (!match) {
+    courseList.push({code: the_code, name: null});
+    console.log("New course code added: " + the_code);
+  }
+}
