@@ -37,3 +37,8 @@ function doesCourseCodeExist(the_code) {
     console.log("New course code added: " + the_code);
   }
 }
+
+function askUserForCourseCode() {
+  var courseCode = getInput();
+  doesCourseCodeExist(courseCode);
+}
