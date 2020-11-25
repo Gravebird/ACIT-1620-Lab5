@@ -24,11 +24,11 @@ function isInt(value) {
 
 function doesCourseCodeExist(the_code) {
   var i;
-  var match = False;
+  var match = false;
   for (i = 0; i < courseList.length; i++) {
     if (courseList[i][0].indexOf(the_code) > -1) {
       console.log("Yes I am taking the course: " + courseList[i][1]);
-      match = True;
+      match = true;
       break;
     }
   }
