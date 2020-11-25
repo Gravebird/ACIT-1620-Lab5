@@ -26,8 +26,8 @@ function doesCourseCodeExist(the_code) {
   var i;
   var match = false;
   for (i = 0; i < courseList.length; i++) {
-    if (courseList[i][0].indexOf(the_code) > -1) {
-      console.log("Yes I am taking the course: " + courseList[i][1]);
+    if (courseList[i].code.indexOf(the_code) > -1) {
+      console.log("Yes I am taking the course: " + courseList[i].name);
       match = true;
       break;
     }
